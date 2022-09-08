@@ -2,7 +2,25 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <div>Navbar</div>
+    <>
+    <nav>
+<div>logo</div>
+
+<div>
+
+nav
+</div>
+
+
+<div>
+
+  basket
+</div>
+
+
+    </nav>
+    
+    </>
   )
 }
 
