@@ -1,28 +1,40 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {
+  Home,
+  Product,
+  Aboute,
+  Login,
+  Error,
+  SharedLayout,
+  SingleProduct,
+  Dashboard,
+  ProtectedRoure,
+} from "./pages/Component";
 
-// import './App.css';
-// import { FaApple } from "react-icons/fa";
-import { BrowserRouter,Routes, Route,} from "react-router-dom";
-import Home from './pages/Home'
-import Product from './pages/Product'
-import Aboute from './pages/Aboute'
-import Error from './pages/Error'
 function App() {
   return (
-<>
-
-<BrowserRouter>
-<Routes>
-<Route index  path='/' element={<Home/>} />
-<Route   path="/product"   element={<Product/>}/>
-<Route   path="/aboute" element={<Aboute/>}/>
-<Route path="*"  element={<Error/>}/>
-</Routes>
-
-</BrowserRouter>
-</>
-
-
-
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<SharedLayout />}>
+            <Route index element={<Home />} />
+            <Route path="/product" element={<Product />} />
+            <Route path="/product/:productId" element={<SingleProduct />} />
+            <Route path="/aboute" element={<Aboute />} />
+            <Route path="/login" element={<Login />} />
+            <Route
+              path="/dashboard/*"
+              element={
+                <ProtectedRoure>
+                  <Dashboard />
+                </ProtectedRoure>
+              }
+            />
+            <Route path="*" element={<Error />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

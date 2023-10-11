@@ -1,0 +1,44 @@
+.offer {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 60px 40px;
+  margin: 50px 0;
+}
+.offer > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.offer span {
+  color: red;
+  font-size: 1.5em;
+  padding: 20px 0;
+}
+.offer h2 {
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: black;
+}
+.offer p {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: black;
+  padding: 1em 0;
+}
+
+@media screen and (min-width: 768px) {
+  .offer span {
+    font-size: 3em;
+  }
+  .offer h2 {
+    font-size: 3.7em;
+  }
+  .offer p {
+    font-size: 1.2em;
+  }
+  .offer a {
+    padding: 20px 40px;
+  }
+}

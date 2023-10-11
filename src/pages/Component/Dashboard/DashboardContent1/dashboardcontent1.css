@@ -1,0 +1,21 @@
+.dashboardcontent1 > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.compared {
+  box-shadow: -2px 2px 5px 2px silver;
+  border-radius: 10px;
+  margin: 20px 10px;
+  width: 70%;
+  padding: 3.5em 1.8em;
+  color: black;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.compared span {
+  font-size: 0.9em;
+}

@@ -1,0 +1,44 @@
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+}
+.form h2 {
+  font-weight: bold;
+  margin: 40px 0;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.562);
+}
+.form form {
+  width: 250px;
+}
+
+.form label {
+  font-size: 0.8em;
+  padding-bottom: 5px;
+  color: dimgray;
+}
+
+.form .password {
+  position: relative;
+}
+
+.form .iconpassword {
+  position: absolute;
+  top: 42%;
+  left: -14%;
+}
+.form .error {
+  color: red;
+  font-weight: bold;
+}
+.form button {
+  border: none;
+  outline: none;
+  width: 250px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}

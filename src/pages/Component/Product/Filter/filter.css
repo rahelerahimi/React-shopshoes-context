@@ -1,0 +1,62 @@
+.parentfilter {
+  display: flex;
+  justify-content: center;
+}
+
+.filter {
+  padding: 1.1em;
+  border: 2px solid rgba(192, 192, 192, 0.603);
+  border-radius: 7px;
+  width: 77%;
+  margin-top: 1em;
+}
+.filter > div:nth-of-type(1) {
+  padding: 0.7em 0;
+}
+
+.filter .numberproduct > span {
+  color: red;
+  font-weight: bold;
+}
+.filter .sort {
+  display: flex;
+  padding: 10px 0;
+}
+.filter .sort > div {
+  margin-left: 10px;
+}
+.filter .sort > div:nth-of-type(2) {
+  padding: 0 10px;
+}
+.filter .sort > span {
+  color: red;
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+.filter .sort label {
+  padding-left: 3px;
+  color: dimgray;
+}
+.filter .brand {
+  padding: 10px 0;
+}
+.filter .brand > span {
+  color: dimgray;
+}
+.filter .brand select {
+  width: 150px;
+  border: none;
+  outline: none;
+}
+
+@media screen and (min-width: 992px) {
+  .parentfilter {
+    justify-content: flex-end;
+    margin-right: 3em;
+  }
+
+  .filter {
+    width: 70%;
+  }
+}

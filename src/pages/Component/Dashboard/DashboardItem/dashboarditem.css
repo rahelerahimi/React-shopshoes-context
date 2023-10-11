@@ -1,0 +1,43 @@
+.dashboarditem {
+  padding: 50px 0;
+  width: 20%;
+  height: 300px;
+  margin: 100px 50px 100px 85px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px silver;
+}
+.dashboarditem ul {
+  margin-right: -2em !important;
+}
+.dashboarditem li {
+  display: flex !important;
+  color: rgb(145, 145, 145);
+  margin: 2em 0;
+  text-transform: capitalize;
+}
+.dashboarditem a {
+  display: flex !important;
+  align-items: center;
+  height: 40px;
+  padding: 0 1em;
+  color: rgb(145, 145, 145);
+}
+.dashboarditem a:hover {
+  color: dimgray;
+}
+
+.dashboarditem li span {
+  padding: 0 0.2em;
+}
+.item {
+  width: 170px;
+  height: 40px;
+  background: silver !important;
+  border-radius: 8px;
+}
+@media screen and (max-width: 992px) {
+  .dashboarditem {
+    width: 90%;
+    margin: 40px;
+  }
+}

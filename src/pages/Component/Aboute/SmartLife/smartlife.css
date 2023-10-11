@@ -1,0 +1,15 @@
+.smartlife {
+  margin: 4.5em auto;
+}
+.smartlife img {
+  width: 90%;
+}
+.life {
+  padding: 3em 6em;
+}
+
+@media screen and (min-width: 768px) {
+  .life {
+    padding: 40px 60px;
+  }
+}

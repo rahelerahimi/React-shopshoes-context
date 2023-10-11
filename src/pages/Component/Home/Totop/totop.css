@@ -1,0 +1,20 @@
+.totop {
+  background-color: crimson;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.6s;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+}
+.showtotop {
+  opacity: 1;
+  bottom: 40px;
+}

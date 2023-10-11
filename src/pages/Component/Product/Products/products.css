@@ -1,0 +1,46 @@
+.products {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3em;
+  padding: 1.7em 0;
+}
+.products .row {
+  margin-left: 2em !important;
+}
+
+.products .featureitem {
+  margin: 15px 0;
+}
+.products .featureimage {
+  box-shadow: 0 0 5px silver;
+  border-radius: 20px;
+  width: 90%;
+  transition: 0.7s;
+  margin-top: 1em;
+}
+
+.products .featureimage:hover {
+  box-shadow: 0 0 5px rgb(143, 141, 141);
+}
+
+.products .featureitem > div {
+  padding: 1.7em 0;
+}
+
+.products .featureitem h3 {
+  font-size: 1.2em;
+  color: black;
+  margin: 15px 0;
+  transition: 0.7s;
+}
+.products .featureitem h3:hover {
+  color: crimson;
+}
+@media screen and (min-width: 768px) {
+  .products {
+    justify-content: center;
+  }
+  .products .row {
+    margin-left: 1 !important;
+  }
+}

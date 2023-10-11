@@ -1,0 +1,128 @@
+nav {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: white;
+  margin-bottom: 40px;
+  border-bottom: 1px solid silver;
+  overflow-x: hidden !important;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  padding-left: 3.5em;
+}
+nav .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+nav .link > div:nth-of-type(1) {
+  display: none;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav ul > li {
+  padding: 15px;
+}
+nav .basket {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 2.7em;
+  position: relative;
+}
+nav .basket > span {
+  cursor: pointer;
+}
+nav .basket > .counter {
+  position: absolute;
+  top: 15px;
+  right: 20%;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7em;
+}
+
+nav .basket > div:nth-of-type(1) {
+  padding: 10px;
+  cursor: pointer;
+}
+
+nav .basket > div:nth-of-type(2) {
+  display: none;
+}
+a {
+  color: dimgray;
+  font-weight: bold;
+}
+a:hover {
+  color: red;
+}
+.active {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+@media screen and (max-width: 767px) {
+  nav {
+    padding-top: 1.5em;
+  }
+  nav .link {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: silver;
+    width: 250px;
+    height: 100vh;
+    display: block;
+    transition: 1s;
+    z-index: 999;
+    margin-top: 0;
+  }
+  nav .link > ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+
+  #shownavbar {
+    right: 0;
+  }
+  #hidenavbar {
+    right: -100%;
+  }
+  nav .basket > div:nth-of-type(2) {
+    display: block;
+    cursor: pointer;
+  }
+  nav .basket > div:nth-of-type(3) {
+    display: block;
+    position: absolute;
+    z-index: 1000;
+  }
+
+  nav .link > div:nth-of-type(1) {
+    position: fixed;
+    top: 10px;
+    display: block;
+    cursor: pointer;
+  }
+  nav .basket > .counter {
+    top: -1em;
+    right: 7em;
+  }
+}

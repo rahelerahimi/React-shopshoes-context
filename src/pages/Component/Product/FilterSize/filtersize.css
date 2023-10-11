@@ -1,0 +1,29 @@
+.filtersize {
+  box-shadow: 0 0 5px silver;
+  border-radius: 20px;
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+}
+.filtersize > div {
+  color: dimgray;
+}
+.filtersize > div > div:nth-of-type(1) {
+  border-bottom: 1px solid silver;
+  padding: 10px 0;
+}
+.filtersize > div > p {
+  padding: 7px 0;
+  display: block;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.filtersize > div > p:hover {
+  color: red;
+}
+
+@media screen and (min-width: 992px) {
+  .filtersize {
+    margin: -7em 0 0 40px;
+  }
+}

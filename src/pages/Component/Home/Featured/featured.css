@@ -1,0 +1,55 @@
+.featured > div:nth-of-type(1) {
+  display: flex;
+  justify-content: center !important;
+  margin-left: 2.5em;
+}
+.featured > div:nth-of-type(1) > div {
+  width: 97%;
+  margin-top: 2.8em;
+}
+.featured h2 {
+  font-size: 3em;
+  text-align: center;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.featured p {
+  text-align: center;
+  font-size: 1.2em;
+  color: dimgray;
+}
+
+.featured .featureimage {
+  box-shadow: 0 0 5px silver;
+  border-radius: 20px;
+  width: 90%;
+  transition: 0.7s;
+}
+.featured .featureimage:hover {
+  box-shadow: 0 0 5px rgb(143, 141, 141);
+}
+
+.featured .featureitem > div {
+  padding: 1.2em 0;
+}
+.featured .featureitem h3 {
+  font-size: 1.2em;
+  color: black;
+  transition: 0.7s;
+}
+.featured .featureitem h3:hover {
+  color: red;
+}
+
+@media screen and (max-width: 722px) {
+  .featured h2 {
+    font-size: 2em;
+  }
+
+  .featured p {
+    font-size: 1em;
+    padding: 1em 0;
+    width: 70%;
+    margin: 0 auto;
+  }
+}

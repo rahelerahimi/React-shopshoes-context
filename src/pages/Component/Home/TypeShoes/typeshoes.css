@@ -1,0 +1,47 @@
+.typeshoes {
+  padding: 4em 2.5em;
+  margin-left: 1em;
+  overflow-x: hidden;
+}
+.typeshoes .parent {
+  position: relative;
+  overflow-x: hidden;
+}
+.typeshoes .parent img {
+  width: 100%;
+  border-radius: 0.5em;
+  margin-top: 0.8em;
+}
+
+.typeshoes .parent:nth-of-type(1) {
+  transition-delay: 0.1s;
+}
+
+.typeshoes .parent:nth-of-type(2) {
+  transition-delay: 0.2s;
+}
+.typeshoes .parent:nth-of-type(3) {
+  transition-delay: 0.3s;
+}
+
+.typeshoes .title {
+  position: absolute;
+  top: 1.2em;
+  left: 30%;
+  text-align: center;
+  color: white;
+}
+
+.typeshoes .title > h2 {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+.typeshoes .title > p {
+  font-size: 1.2em;
+}
+@media screen and (min-width: 768px) {
+  .typeshoes .title > h2 {
+    font-size: 1.5em;
+  }
+}
